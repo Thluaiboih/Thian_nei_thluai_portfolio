@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body{
+        background-color: #1a1a1a;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card{
+        display: flexbox;
+        background-color:whitesmoke;
+        border-radius: 8px;
+        margin: 0;
+        padding:30px;
+        width: 300px;
+      }
+      h2{
+        color: #2e6cfb;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form{
+        display: flex;
+       flex-direction: column;
+       gap: 5px;
+      }
+      input{
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(232, 241, 249);
+        border: 1px solid black;
+      }
+      button{
+        background-color: #5083fb;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      button:hover{
+        background-color: #064ae8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Login</h2>
+        <form>
+            <input type="email" name="email" id="email" placeholder="Email"></input>
+            <input type="password" name="password" id="password" placeholder="Password"></input>
+            <button id="submit">Submit</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script>
+        const handleLogin=(event)=>{
+            event.preventDefault();
+            const email=document.getElementById("email").value.trim();
+            const password=document.getElementById("password").value.trim();
+            const message=document.getElementById("message");
+            if(!email || !password){
+                message.textContent="Please fill in both fields.";
+                message.style.color="red";
+                return;
+            }
+            else if(email==="tintinmya@gmail.com" && password ==="123456"){
+                message.textContent="Login successful!";
+                message.style.color="green";
+            } 
+            else{
+                message.textContent="Invalid email or password.";
+                message.style.color="red";
+            }
+        };         
+        document.getElementById("submit").addEventListener("click",handleLogin)
+    </script>
+  </body>
+</html>
