@@ -24,5 +24,5 @@ Font Awesome (icons)
 
 How to run this project
 
-1. Clone the repository:
-   git clone [https://github.com/Thluaiboih/Thian_nei_thluai_portfolio.git]
+Clone the repository:
+git clone [https://github.com/Thluaiboih/Thian_nei_thluai_portfolio.git]
