@@ -1,20 +1,45 @@
+/*print part*/
 @media print {
   @page {
     size: A4;
     margin: 10mm;
   }
-  .page {
-    box-shadow: none;
-    margin: 0;
-    width: 100%;
-    min-height: auto;
-    page-break-inside: avoid;
-  }
   body {
     background-color: white;
     margin: 0;
     padding: 0;
+    /* display: block; */
+    font-size: 12pt;
   }
+  .page {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* min-height: auto; */
+    page-break-inside: avoid;
+  }
+  nav,
+  .nav-links {
+    display: none;
+  }
+  .two-column {
+    display: block;
+  }
+  .contact-list {
+    text-align: center;
+    font-size: 11pt;
+  }
+  .contact-list span {
+    display: inline;
+  }
+  .contact-list span:not(:last-child)::after {
+    content: " | ";
+    margin: 0 6px;
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -24,26 +49,18 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+.position {
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 15px;
+}
 h1 {
   text-align: center;
   font-size: 2em;
   margin-top: 0%;
   margin-bottom: 5px;
 }
-/* .page {
-  width: 210mm;
-  padding: 20mm;
-  min-height: 297mm;
-  background-color: white;
-
-  border-radius: 5px;
-} */
-.position-contact {
-  text-align: center;
-  font-size: 1.2 em;
-  margin-top: 3px;
-}
-.skill-education-contact {
+.two-column {
   display: flex;
   margin-top: 20px;
 }
@@ -60,7 +77,7 @@ h3 {
   margin-bottom: 10px;
 }
 h4 {
-  font-size: 1.1 em;
+  font-size: 1.1em;
   margin-top: 2%;
   margin-bottom: 5px;
 }
@@ -74,40 +91,64 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: darkblue;
+  color: darkblue;
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
-  .menu-icon {
+  .nav-links ul {
+    list-style: none;
+    padding: 15px 15px;
+  }
+  .nav-links a {
+    color: #2e6cfb;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    color: darkblue;
+    text-decoration: underline;
+  }
+  body {
+    padding: 20px;
+    font-size: 14px;
+  }
+  main .page {
     display: block;
-  }
-  .nav-links {
-    display: none;
     flex-direction: column;
-    gap: 15px;
   }
-  .nav-links.active {
-    display: flex;
+
+  .contact-list {
+    display: block;
+    flex-direction: column;
+  }
+  .contact-list span {
+    display: block;
+    flex-direction: column;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 769px) {
-  .menu-icon,
-  .fa-bars {
-    display: none !important;
+  .nav-links {
+    display: none;
   }
-  nav {
+  section {
+    display: block;
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .contact-list span {
+    display: inline;
     align-items: center;
   }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 100px;
-  }
-  .nav-links li {
-    display: inline-block;
-    margin: 0 35px;
+  .contact-list span:not(:last-child)::after {
+    content: " | ";
+    margin: 0 6px;
   }
 }

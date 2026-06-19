@@ -1,34 +1,28 @@
-# Thian_nei_thluai_portfolio
+Thian_nei_thluai_portfolio
 
-A personal portfolio website showcasing my skills, education, projects, and contact information.  
-Built with **HTML, CSS, and JavaScript**, this site highlights my journey as a junior web developer.
+At first, I wasn't sure what kind of project should I create for my portfolio. But when I designed my CV with Canva. I realized I needed a place to connect my social profiles and showcase my projects. That's why I decided to build my own portfolio website. In this website, I mainly use HTML, CSS,and JS to show my front-end skills. I also included links to my other projects, including a Bootstrap I am currently working on Tailwind CSS project to continue improving my skills.
 
----
+Features
 
-## Features
+A Responsive design (mobile-friendly)
+Sections included:
+About Me,
+Skills & Education,
+Projects,
+Languages & Social Links,
+and Contact
+Links to GitHub, LinkedIn, and downloadable CV
+Font Awesome icons for modern UI
 
-- Responsive design with a mobile-friendly hamburger menu
-- Sections for:
-  - About Me
-  - Skills
-  - Education
-  - Projects
-  - Languages
-  - Contact
-- Integrated links to GitHub, LinkedIn, and downloadable CV
-- Font Awesome icons for modern styling
+Technologies Used
 
----
+HTML5
+CSS
+JavaScript
+Bootstrap
+Font Awesome (icons)
 
-## Technologies Used
-
-- **HTML5**
-- **CSS**
-- **JavaScript**
-- **Font Awesome** (icons)
-- \*\*Bootstrap
-
-## Installation
+How to run this project
 
 1. Clone the repository:
    git clone [https://github.com/Thluaiboih/Thian_nei_thluai_portfolio.git]

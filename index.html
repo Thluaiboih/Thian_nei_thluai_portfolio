@@ -5,128 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <main class="page">
-    <h1>Thian Nei Thluai</h1>
-    <h3 class="position-contact">Junior Web Developer</h3>
-    
-    <h5 class="position-contact">
-      Portfolio:
-      <a href="thian_nei_thluai_cv.pdf">Portfolio</a> |
-      <i class="fa-solid fa-envelope"></i>
-      Gmail:
-      <a href="mailto:thluaiboih06@gmail.com">thluaiboih06@gmail.com</a> |
-      <i class="fa-solid fa-square-phone"></i>
-      Phone: <a href="+959405953644">+959405953644</a>
-    </h5>
-    
-    <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
+      <h1>Thian Nei Thluai</h1>
+      <h3 class="position">Junior Web Developer</h3>
+      <section id="contact">
+        <div class="contact-list">
+          <span
+            >Portfolio:
+            <a href="thian_nei_thluai_cv.pdf">Portfolio</a>
+          </span>
+          <span>
+            <i class="fa-solid fa-envelope"></i>
+            Gmail:
+            <a href="mailto:thluaiboih06@gmail.com">thluaiboih06@gmail.com</a>
+          </span>
+          <span>
+            <i class="fa-solid fa-square-phone"></i>
+            Phone: <a href="tel:+959405953644">+959405953644</a>
+          </span>
+        </div>
+      </section>
       <nav class="nav-links" id="navLinks">
         <ul>
-          <li><a href="home">Home</a></li>
-          <li><a href="contact">Contact</a></li>
-          <li><a href="education">Education</a></li>
-          <li><a href="skills">Skills</a></li>
-          <li><a href="project">Project</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills-education">Skills & Education</a></li>
+          <li><a href="#language-social">Language & Social Links</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    <h3>About Me</h3>
-    <hr>
-    <p>
-      I am a passionate front-end developer with experience in building
-      responsive and user-friendly web applications. I have a strong background
-      in HTML, CSS and JavaScript. I am also familiar with Python, MySQL, and
-      frameworks like Tailwind CSS and Bootstrap. I am always eager to learn new
-      technologies and improve my skills to create better user experiences.
-    </p>
-    <div class="skill-education-contact">
+      <section id="home">
+        <br />
+        <h3>About Me</h3>
+        <hr />
+        <p>
+          I am a junior front-end developer. I can build a responsive and
+          user-friendly websites. I currently build a website by using HTML,
+          CSS, Java Script, Tailwind CSS and Bootstrap. I can also use Python
+          and MySQL, and now... I am currently learning Typescript. I enjoy
+          programming and learning about user experience(UX) and user
+          interface(UI) design.
+        </p>
+      </section>
+      <section id="skills-education">
+        <div class="two-column">
+          <div class="column">
+            <h3>Skills</h3>
+            <hr />
+            <ul>
+              <li><a href="html_tutorial.html">HTML</a></li>
+              <li><a href="css_tutorial.html">CSS</a></li>
+              <li><a href="javaScript_tutorial.html">JavaScript</a></li>
+              <li>Python</li>
+              <li>MySQL</li>
+              <li>Tailwind CSS</li>
+              <li><a href="bootstrap_tutorial.html">Bootstrap</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Education</h3>
+            <hr />
+            <ul>
+              <li>
+                <strong>Computer Technology</strong> <br />[ University of
+                Computer Studies,Kalay] <br /><span>2018-2020</span>
+              </li>
+              <li>
+                <strong>Web Development</strong> <br />[Digital Skills
+                Institute] <br /><span>June - July (2025)</span>
+              </li>
+              <li>
+                <strong>Python Programming</strong> <br />[Digital Skills
+                Institute] <br /><span>March - May (2026)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <h3>Projects</h3>
+        <hr />
+        <ul>
+          <li>
+            <h4>
+              <a href="https://github.com/Thluaiboih/Thian_nei_thluai_portfolio"
+                >Personal Portfolio Website</a
+              >
+            </h4>
+          </li>
+          <p>
+            At first, I wasn't sure what kind of project should I create for my
+            portfolio. But when I designed my CV with Canva. I want a place to
+            connect my social accounts and showcase my projects. That's why I
+            decided to build my own portfolio website. In this website, I mainly
+            uses HTML, CSS,and JS to show my front-end skills. I also included
+            links to my other projects, including a Bootstrap I am currently
+            working on Tailwind CSS project to continue improving my skills.
+          </p>
 
-    <div class="column">
-      <h3>Skills</h3>
-      <hr>
-      <ul>
-        <li><a href="html_tutorial.html">HTML</a></li>
-        <li><a href="css_tutorial.html">CSS</a></li>
-        <li><a href="javaScript_tutorial.html">JavaScript</a></li>
-        <li>Python</li>
-        <li>MySQL</li>
-        <li>Tailwind CSS</li>
-        <li><a href="bootstrap_tutorial.html">Bootstrap</a></li>
-      </ul>
-    </div>
-    <div class="column">
-      <h3 >Education</h3>
-      <hr>
-      <ul>
-        <li>
-          <strong>Computer Technology</strong> <br>[ University of Computer Studies,Kalay]
-          <br /><span>2018-2020</span>
-        </li>
-        <li>
-          <strong>Web Development</strong> <br>[Digital Skills Institute] <br /><span>June - July (2025)</span>
-        </li>
-        <li>
-          <strong>Python Programming</strong> <br>[Digital Skills Institute] <br /><span>March - May (2026)</span>
-        </li>
-      </ul>
-    </div>
-    </div>
-    <div >
-      <h3>Projects</h3>
-      <hr>
-      <ul>
-      <li><h4><a href="https://github.com/Thluaiboih/Thian_nei_thluai_portfolio">Personal Portfolio Website</a></h4></li>
-      <p>
-        I created a personal portfolio website to showcase my skills and
-        projects. The website is built using HTML, CSS, and JavaScript, and it
-        features a responsive design that works well on both desktop and mobile
-        devices. The portfolio includes sections for my about me, skills,
-        projects, and contact information. 
-      </p>
-
-      <li><h4><a href="https://github.com/Thluaiboih/python-bookstore-management">Bookstore Library Management System</a></h4></li>
-      <p>
-        I developed a book management system for a local bookstore, allowing
-        staff to track inventory, manage customer records, and process
-        transactions. The system was built using Python and MySQL. It features a
-        user-friendly interface and provides functionalities such as adding new
-        books, updating stock levels, and deleting records. The system has
-        helped the bookstore improve its efficiency and organization.
-      </p>
-      </ul>
-    </div>
-  <div class="skill-education-contact">
-    <div class="column">
-    <h3>Language</h3>
-    <hr>
-    <p>
-      - English (B1 intermediate)
-      <br />
-      - Chinese (Basic)
-      <br />
-      - Burmese (Native)
-    </p>
-    </div>
-    <div class="column">
-    <h3>
-      Social Links
-    </h3>
-    <hr>
-    <p>
-    <i class="fa-brands fa-github"></i>
-      GitHub : <a href="https://github.com/Thluaiboih">Thluai Boih</a> <br>
-      <i class="fa-brands fa-linkedin"></i> LinkedIn :
-      <a
-        href="https://www.linkedin.com/in/thluai-boih-0834a41b6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-        >Thluai Boih</a
-      >
-    </p>
-    </div>
-  </div>
+          <li>
+            <h4>
+              <a
+                href="https://github.com/Thluaiboih/python-bookstore-management"
+                >Bookstore Library
+              </a>
+            </h4>
+          </li>
+          <p>
+            I built this project for my class' final project. In this project, I
+            used Python and MySQL to manage book inventory and author records.
+            It supports CRUD operations, including viewing, adding, searching,
+            updating, deleting books,as well as viewing authors. MySQL is used
+            to store and manage the data. This project improved data
+            organization and reduced manual record-keeping for bookstore staff.
+          </p>
+        </ul>
+      </section>
+      <section id="language-social">
+        <div class="two-column">
+          <div class="column">
+            <h3>Language</h3>
+            <hr />
+            <p>
+              - English (B1 intermediate)
+              <br />
+              - Chinese (Basic)
+              <br />
+              - Burmese (Native)
+            </p>
+          </div>
+          <div class="column">
+            <h3>Social Links</h3>
+            <hr />
+            <p>
+              <i class="fa-brands fa-github"></i>
+              GitHub : <a href="https://github.com/Thluaiboih">Thluai Boih</a>
+              <br />
+              <i class="fa-brands fa-linkedin"></i> LinkedIn :
+              <a
+                href="https://www.linkedin.com/in/thluai-boih-0834a41b6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                >Thluai Boih</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
-  </main>
   <script src="script.js"></script>
-
 </html>
